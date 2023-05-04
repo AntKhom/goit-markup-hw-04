@@ -154,9 +154,18 @@ p {
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
+    height: 600px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: var(--title-text-color);
     text-align: center;
+
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
@@ -244,6 +253,32 @@ p {
     width: calc((100%-72px)/4);
 
     /* outline: 1px solid teal; */
+}
+
+.advant .item::before{
+    content: "";
+    display: block;
+    height: 112px;
+    background-color: var(--text-footer-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px;
+}
+
+.icon-strategy::before{
+    background-image: url('../images/antenna.svg');
+}
+
+.icon-punktuality::before{
+    background-image: url('../images/clock.svg')
+}
+
+.icon-diligence::before {
+    background-image: url('../images/diagram.svg');
+}
+
+.icon-technologies::before {
+    background-image: url('../images/astronaut.svg');
 }
 
 .advant .item:not(:last-child) {
