@@ -329,20 +329,7 @@ p {
 
 .team .list {
     display: flex;
-}
-
-.team .item:not(:last-child) {
-    margin-right: 24px;
-}
-
-/* .team .image {
-    margin-bottom: 32px;
-} */
-.team .title {
-    margin-bottom: 8px;
-        
-    text-align: center;
-    letter-spacing: 0.02em;
+    gap: 24px;
 }
 
 .team .item {
@@ -354,7 +341,15 @@ p {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 2px 1px rgba(46, 47, 66, 0.08);
+} 
+
+.team .title {
+    margin-bottom: 8px;
+        
+    text-align: center;
+    letter-spacing: 0.02em;
 }
+
 .team .subtitle {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -379,6 +374,7 @@ p {
 
 .list-social .item{
     box-shadow: none;
+    margin: 0;
 }
 
 .list-social .link {
@@ -424,32 +420,33 @@ p {
     gap:24px;
 }
 
+.customers .item {
+    height: 88px;
+    width: calc((100% - 120px) / 6);   
+}
+
 .customers .link {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 88px;
-    width: 168px;
-    border: 2px solid var(--border-color);
+    height: 100%;
+    width: 100%;
+    border: 1px solid #8e8f99;
     border-radius: 4px;
+    color:#8e8f99;
 }
 
-/* .customers .item:not(:last-child) {
-    margin-right: 24px; 
-}*/
+.customers .icon {
+    fill: currentColor;
+}
 
-.customers .link:hover {
+.customers .link:hover,
+.customers .link:focus {
     border-color: var(--links-hover-color);
-
 }
 
-.customers .link{
-    fill:#8e8f99
-}
 
-.customers .link:hover {
-    fill: var(--links-hover-color)
-}
+
 
 /* Footer */
 .footer {
@@ -487,9 +484,9 @@ p {
     margin-right: 120px;
 }
 
-/* .footer-social {
-    display: flex;
-} */
+ .footer .list-social{
+    gap: 16px;
+} 
 
 .footer-social .title {
     color: var(--primary-white-color);
